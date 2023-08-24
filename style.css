@@ -318,13 +318,57 @@ body {
   color: #903;
   text-decoration: underline;
 }
+.contact-mail-white {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  width: 50%;
+  height: inherit;
+  background: linear-gradient(#903, #ab6868);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  border: 1px solid #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-title {
+  color: #fbf1b1;
+  font-size: 27px;
+}
+
+.contacts-image {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  vertical-align: middle;
+}
+
+.text-mt {
+  margin-top: 12px;
+}
 
 @media (max-width: 1158px) {
   .logo-container {
     display: block;
     position: absolute;
     left: 20px;
-    top: 23px;
+    top: 20px;
   }
   .nav {
     padding: 1rem;
@@ -382,6 +426,26 @@ body {
 @media (max-width: 1158px) {
   .title {
     width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts {
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+
+  .contacts {
+    border: 1px solid #fff;
+    margin: 30px;
   }
 }
 
