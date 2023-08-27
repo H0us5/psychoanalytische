@@ -129,6 +129,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   letter-spacing: 0px;
   font-weight: 400;
+  text-align: center;
   text-transform: none;
   font-style: normal;
   border-width: 1px;
@@ -833,6 +834,7 @@ body {
   }
   .nav > #nav-check:checked ~ .nav-list {
     height: calc(100vh - 60px);
+    /* height: fit-content; */
   }
 }
 @media (max-width: 1158px) {
@@ -920,10 +922,12 @@ body {
   .hero-page__title {
     font-size: 32px;
     line-height: 1.35;
+    width: 95%;
   }
   .button {
+    width: 90%;
     padding: 0.75rem 0.75rem;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.35;
   }
 }
